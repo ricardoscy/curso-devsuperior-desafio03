@@ -1,0 +1,10 @@
+insert into tb_client(name, cpf, income, birth_date, children) values('André Machado', '506.766.890-35', 4500.00, '1990-01-12', 1);
+insert into tb_client(name, cpf, income, birth_date, children) values('Maria Soares', '242.784.770-40', 6000.00, '1995-05-05', 2);
+insert into tb_client(name, cpf, income, birth_date, children) values('Kleber Norte', '042.452.710-35', 12000.00, '1981-09-23', 3);
+insert into tb_client(name, cpf, income, birth_date, children) values('João Givaldo', '008.230.730-09', 5250.00, '2005-11-20', 0);
+insert into tb_client(name, cpf, income, birth_date, children) values('Genildo dos  Santos', '247.167.430-55', 6500.00, '2001-02-15', 0);
+insert into tb_client(name, cpf, income, birth_date, children) values('Flavia Arruda', '206.937.040-20', 1850.00, '1988-07-17', 1);
+insert into tb_client(name, cpf, income, birth_date, children) values('Jessica de Andrade', '744.931.680-30', 2500.00, '1999-08-21', 1);
+insert into tb_client(name, cpf, income, birth_date, children) values('Marcos Paulo Coram', '402.252.090-63', 8000.00, '1992-12-01', 2);
+insert into tb_client(name, cpf, income, birth_date, children) values('Paula Mendes', '624.327.220-60', 3500.00, '1989-03-13', 2);
+insert into tb_client(name, cpf, income, birth_date, children) values('Fernanda de Moraes', '553.289.710-78', 7250.00, '2002-04-24', 0);
