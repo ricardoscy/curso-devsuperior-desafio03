@@ -21,7 +21,7 @@ public class ClientDTO {
         this.children = children;
     }
 
-    public ClientDTO(Client client){
+    public ClientDTO(Client client) {
         id = client.getId();
         name = client.getName();
         cpf = client.getCpf();
