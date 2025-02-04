@@ -2,6 +2,7 @@ package com.devsuperior.curso.desafio03.controllers;
 
 import com.devsuperior.curso.desafio03.dtos.ClientDTO;
 import com.devsuperior.curso.desafio03.services.ClientService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -29,7 +30,7 @@ public class ClientController {
     }
 
     @PostMapping
-    public ResponseEntity<ClientDTO> insert(@RequestBody ClientDTO clientDTO){
+    public ResponseEntity<ClientDTO> insert(@Valid @RequestBody ClientDTO clientDTO){
         clientDTO = service.insert(clientDTO);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clientDTO.getId()).toUri();
         return ResponseEntity.created(uri).body(clientDTO);
