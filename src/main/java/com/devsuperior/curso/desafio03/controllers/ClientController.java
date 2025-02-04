@@ -35,4 +35,10 @@ public class ClientController {
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clientDTO.getId()).toUri();
         return ResponseEntity.created(uri).body(clientDTO);
     }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<ClientDTO> update(@PathVariable Long id, @Valid @RequestBody ClientDTO clientDTO){
+        clientDTO = service.update(id, clientDTO);
+        return ResponseEntity.ok().body(clientDTO);
+    }
 }
